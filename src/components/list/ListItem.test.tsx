@@ -1,0 +1,26 @@
+import * as React from 'react';
+import { render, cleanup } from '@testing-library/react';
+import ListItem from './ListItem';
+
+describe('ListItem component', () => {
+  afterEach(() => cleanup());
+
+  it('render ListItem', () => {
+    const { asFragment } = render(
+      <ListItem
+        characters={[
+          {
+            char_id: 1,
+            name: 'fred'
+          },
+          {
+            char_id: 2,
+            name: 'dave'
+          }
+        ]}
+      />
+    );
+
+    expect(asFragment()).toMatchSnapshot();
+  })
+})

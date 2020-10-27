@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItem component render ListItem 1`] = `
+<DocumentFragment>
+  <ul>
+    <li>
+      <h2>
+        fred
+      </h2>
+    </li>
+    <li>
+      <h2>
+        dave
+      </h2>
+    </li>
+  </ul>
+</DocumentFragment>
+`;
