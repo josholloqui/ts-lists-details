@@ -11,11 +11,10 @@ export const getCharacters = () => {
 export const getCharacter = (id: string) => {
   return fetch(`https://breakingbadapi.com/api/characters/${id}`)
     .then(res => res.json())
-    .then(json => json.map((character: { char_id: number, name: string, img: string, status: string, portrayed: string }) => ({
-      char_id: character.char_id,
+    .then(json => json.map((character: { char_id: number, name: string, img: string, status: string, birthday: string }) => ({
       name: character.name,
+      birthday: character.birthday,
       img: character.img,
-      status: character.status,
-      portrayed: character.portrayed
+      status: character.status
     })));
 }

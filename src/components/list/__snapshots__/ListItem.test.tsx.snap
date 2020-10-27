@@ -4,14 +4,22 @@ exports[`ListItem component render ListItem 1`] = `
 <DocumentFragment>
   <ul>
     <li>
-      <h2>
-        fred
-      </h2>
+      <a
+        href="/details/1"
+      >
+        <h2>
+          fred
+        </h2>
+      </a>
     </li>
     <li>
-      <h2>
-        dave
-      </h2>
+      <a
+        href="/details/2"
+      >
+        <h2>
+          dave
+        </h2>
+      </a>
     </li>
   </ul>
 </DocumentFragment>
